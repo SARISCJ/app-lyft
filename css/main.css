@@ -1,0 +1,247 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
+
+.fondo {
+  background: url(https://4.bp.blogspot.com/-cCTtUWbUjbo/VbHxXn1-qzI/AAAAAAAAGBo/Jt9LdGLOu9c/s1600/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font: 300 14px/18px Roboto;
+}
+
+.muck-up {
+  height: 640px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #fefefe;
+  background: url("http://s3.amazonaws.com/digitaltrends-uploads-prod/2015/12/man-driving-in-car-in-the-city-ride-share-uber-lyft-getaround-zipcar.jpg");
+}
+
+.overlay {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  margin-top: 123px;
+  margin-left: 30%;
+  z-index: 1;
+}
+
+.f-logo {
+  height: 140px;
+  width: 140px;
+  display: block;
+  background: rgba(0, 0, 0, 1.6);
+  z-index: 1;
+  border-radius: 32%;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.imglogo{
+  position: absolute;
+  z-index: 2;
+  left: 34%;
+  top: 8%;
+}
+
+.slogan {
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3.6em;
+  text-shadow: 2px 3px rgb(231,11,129);
+}
+
+.s-titulo{
+  margin-top: 70px;
+}
+
+.login {
+  margin-top: 65px;
+  font-size: 18px;
+}
+
+.log-in { 
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: none;
+  width: 25%;
+  position: relative;
+  left: 19%;
+  color: white;
+  text-decoration: none;
+}
+
+.sign-up {
+  background: linear-gradient( -45deg, #d2079f , #ff5858);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 21px;
+  outline: none;
+  overflow: hidden;
+  left: 30%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  opacity:1;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.25, 0.265, .85);
+  transition-property:transform,opacity,box-shadow,top,left;
+  transition-duration:.5s;
+  transform-origin:161px 100%;
+  transform:rotateX(0deg);
+  position:relative;
+  text-transform:uppercase;
+  color:white;
+  text-decoration: none;
+}
+
+.btn:hover{
+  cursor:pointer;
+  color: rgb(231,11,129);
+}
+
+.title {
+	color: black;
+	text-align: center;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+/* -->RESITRO<--- */
+
+.container-fluid {
+  height: 640px;
+}
+
+.box #sign-up {
+	box-sizing: border-box;
+	margin: 40px auto;
+	border-radius: 2px;
+	box-shadow: 0 1px 20px 5px rgba(0,0,0,0.4);
+	padding: 15px 35px;
+}
+
+.back{
+	text-decoration: none;
+}
+
+.back-arrow {
+	color: #777;
+  font-size: 20px;
+  margin-top: 10%;
+}
+
+.s-title {
+	color: black;
+	text-align: center;
+	font-size: 10px;
+}
+
+.next {
+ 	position: absolute;
+ 	bottom: 0;
+ 	text-decoration: none; 
+ 	width: 100%;
+ 	left: 0;
+}
+
+.nextText{
+	color: white;
+	text-decoration: none; 
+	background: linear-gradient( -45deg, #d2079f , #ff5858);
+  padding: 20px 163px;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*-->datos<--*/
+
+.panel-body {
+  padding-top: 30px;
+}
+
+.cont-icono {
+  position: relative;
+}
+
+.cont-icono .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.left-addon .glyphicon {
+  left: 0px;
+}
+
+.left-addon input {
+  padding-left: 30px;
+}
+
+input:focus{
+	outline: none;
+}
+
+/*-->codigo<--*/
+
+.pills{
+  position: absolute;
+  width: 100%;
+  top: 125px;
+  left: 30%;
+  z-index: 2;
+  animation-duration: .9s;
+  animation-fill-mode: both;
+}
+
+.code {
+  border: none;
+  background-color: white;
+  border-bottom: 2px solid #d2079f;
+  width: 5%;
+} 
+
+/*-->ubicacion<--*/
+
+.icon-profile-male:before {
+  content: "\e900";
+}
+
+.icon-gift:before {
+  content: "\e99f";
+}
+
+.circulo {
+  height: 30px;
+  width: 30px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  background-color: white;
+  align-content: center;
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.icon_profile {
+  float: right;
+  position: relative;
+  display: inline-block;
+}

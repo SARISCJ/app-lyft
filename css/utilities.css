@@ -6,6 +6,10 @@
 	margin-top: -26px;
 }
 
+.f-left{
+  float: left;
+}
+
 .blue {
     color: #05AAF7;
 }
@@ -16,4 +20,38 @@
 
 .m-top-30 {
 	margin-top: 30%;
+}
+
+.icon-gift:before {
+  content: "\e99f";
+  color: #009688;
+  font-size: 30px;
+}
+
+.icon-credit-card:before {
+  content: "\e93f";
+}
+
+.icon-location:before {
+  content: "\e947";
+}
+
+.icon-history:before {
+  content: "\e94d";
+}
+
+.icon-cog:before {
+  content: "\e994";
+}
+
+.icon-gift:before {
+  content: "\e99f";
+}
+
+.icon-question:before {
+  content: "\ea09";
+}
+
+.ocultar{
+  display: none;
 }

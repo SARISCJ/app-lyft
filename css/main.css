@@ -121,6 +121,14 @@ body {
 }
 
 /* -->RESITRO<--- */
+.form-control:focus {
+outline: none !important;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    border: 1px solid #CCCCCC ;
+}
+
+
 
 .container-fluid {
   height: 640px;
@@ -160,22 +168,12 @@ body {
   cursor: pointer;
   line-height:60px;
   text-align: center;
-}
-
-.next>.nextText {
-  display:inline-block;
-  vertical-align:middle;
-  line-height:normal;
-}
-
-.nextText{
-	color: white;
-	text-decoration: none; 
+  text-decoration: none; 
   font-size: 2em;
-
+  color: white;
 }
 
-.nextText:hover{
+.next:hover{
   color: white;
   text-decoration: none;
 }
@@ -259,7 +257,6 @@ body {
   width: 5%;
 } 
 
-
 .alert{
   width: 80%;
   padding: 5%;
@@ -307,6 +304,7 @@ body {
   display: inline-block;
   margin: 0 auto;
   margin: 7px 9px;
+  font-size: 2em;
 }
 
 .logo_map {
@@ -391,35 +389,8 @@ body {
     width: 35px;
 }
 
-
-
-.back{
-  color: black;
-}
-.style {
-    width: 10% !important;
-}
-.map{
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
-
-div a.pickup{
-  position: absolute;
-  left: 5%;
-  bottom: 2%;
-  width: 90%;
-  border-radius: 8px;
-  background-color: #d500f9;
-}
-
-a img{
-    height: 50px;
-    margin-top: 5%;
+.small{
+  color: #2bbbad;
 }
 
 .ubicacion{
@@ -432,13 +403,13 @@ a img{
   border-radius: 8px;
 }
 
-.gray{
-  background-color: gray;
-}
-
 .usericon{
   width: 50%;
   margin-right: 8%;
+}
+
+.datosUser {
+  left: 2%;
 }
 
 .fotoUsurario{
@@ -446,4 +417,38 @@ a img{
   height: 100%;
   border-radius: 50%;
   border: 1px solid #E3E4E8;
+}
+
+.photoEdit {
+  top: 40%;
+}
+
+.botonx {
+  top: 35%;
+}
+
+.menu-icono{
+  color: #009688;
+  font-size: 15px;
+}
+
+.circle {
+  height: 70% !important;
+  width: 70% !important;
+}
+
+.name{
+  font-size: 2.5em;
+  margin-left: 20%;
+}
+
+.correo{
+  font-size: 1.5em;
+  margin-left: 10%;
+}
+
+.viewProfile{
+  color: #009688 !important;
+  font-size: 1.5em !important;
+  margin-left: 20% !important;
 }

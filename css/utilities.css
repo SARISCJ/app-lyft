@@ -55,3 +55,14 @@
 .ocultar{
   display: none;
 }
+
+.d-ib {
+  display: inline-block !important;
+  left: 10% !important;
+}
+
+.t-dn {
+  text-decoration: none !important;
+}
+
+

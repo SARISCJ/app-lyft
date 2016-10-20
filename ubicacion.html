@@ -2,6 +2,8 @@
 <html class="html">
   <head>
 	 	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/5bd27da385/UntitledProject/style.css">
+	 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	 	<link rel="stylesheet" href="css/materialize.css">
 	  <link rel="stylesheet" type="text/css" href="css/main.css"/>
 	  <link rel="stylesheet" type="text/css" href="css/utilities.css"/>
 	  <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -9,26 +11,38 @@
   </head>
   <body class="body">
   	<div class="logo_map">
-		    	<span class="f-logo_map">
-		    	</span>
-		      <img class="imglogo_map" src="images/logoMap.png">
-		</div>
-    <div class="circulo_gift"><span class="icon-gift icon_profile"></span></div>
+    	<span class="f-logo_map"></span>
+	    <img class="imglogo_map" src="images/logoMap.png">
+	</div>
+    <div class="circulo_gift"><span class="glyphicon glyphicon-gift icon_profile"></span></div>
     <div id="profile" class="circulo_profile">
-		  <a href="profile.html"><img class="photo_map" src="images/photo.jpg"></a>
+		  <a data-activates="slide-out" class="button-collapse"><img class="photo_map" src="images/photo.jpg"></a>
 		</div>
     <div id="mapa_div" class="overlay "></div>
-		<div>
-			<span class="set">
-				
-			</span>
-		</div>
+
+		<ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <a class="t-dn" href="#!user"><img class="circle m-left" src="images/photo.jpg"></a>
+      <a class="t-dn" href="#!name"><span class="name"></span></a>
+      <a class="t-dn" href="#!email"><span class="correo"></span></a>
+      <a href="profile.html" class="t-dn viewProfile">View Profile</a>
+    </div></li>
+    <li class="waves-effect"><a class="d-ib t-dn" href="ubicacion.html"><span class="glyphicon glyphicon-home menu-icono  d-ib" aria-hidden="true">  Home</a></span></li>
+    <li><div class="divider"></div></li>
+    <li><a class="d-ib t-dn" href="#!"><span class="glyphicon glyphicon-gift menu-icono waves-effect d-ib" aria-hidden="true">  Free Rides</a></span></li>
+    <li><a class="d-ib t-dn" href="#!"><span class="glyphicon glyphicon-time menu-icono waves-effect d-ib" aria-hidden="true">  Ride History</a></span></li>
+    <li><a class="d-ib t-dn" href="#!"><span class="glyphicon glyphicon-credit-card menu-icono waves-effect d-ib" aria-hidden="true">  Payment</a></span></li>
+    <li><a class="d-ib t-dn" href="#!"><span class="glyphicon glyphicon-question-sign menu-icono waves-effect d-ib" aria-hidden="true">   Help</a></span></li>
+    <li><a class="d-ib t-dn" href="#!"><span class="glyphicon glyphicon-cog menu-icono waves-effect d-ib" aria-hidden="true">  Settings</a></span></li>
+	  </ul>
     <span class="set1">Set Pickup</span>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6mFA3n7hHA9awvyiO3dJlDvtbnfNBumQ" async defer></script>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	  <script type="text/javascript" src="js/api_map.js"></script>
 	  <script type="text/javascript" src="js/app.js"></script>
 	  <script type="text/javascript" src="js/maps.js"></script>
-	  <script type="text/javascript" src="js/api_map.js"></script>
+	  <script type="text/javascript" src="js/materialize.js"></script>
+	  <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>
 

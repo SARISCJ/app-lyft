@@ -47,6 +47,7 @@ $(document).ready(function(){
 			codigoCel.removeClass("ocultar");
 			setTimeout(function(){ codigoCel.addClass("ocultar"); }, 2000);
 			window.localStorage.setItem("celular", $("#phoneId").val());
+			$("#siguiente").attr("href","codigo.html");
 		}
 	});	
 
@@ -103,19 +104,16 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.button-collapse').sideNav({
+      menuWidth: 250, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
 
-	$(".button-collapse").sideNav({
-		menuWidth: 220, 
-		// closeOnClick: true        // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    });	
+	$(".name").text(localStorage.getItem("nombre"));
+	$(".correo").text(localStorage.getItem("correo"));
 
-	$("#user").text(inputName + " " + inputLastname);
-	var getNames = function(evento){
-	var inputName = $("nombre").val();
-	localStorage.setItem("nombre", inputName);
-	var inputLastname = $("apellido").val();
-	localStorage.setItem("apellido", inputLastname);
-};
 });
 
 
